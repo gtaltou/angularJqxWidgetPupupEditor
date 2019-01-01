@@ -1,0 +1,14 @@
+<jqxButton [theme]="'Shiny Black'" (onClick)="btnOnClick()">Open Editor</jqxButton>
+
+
+<jqxWindow [theme]="'Shiny Black'" #myWindow
+    [width]="500" [height]="500" [maxWidth]="800"
+    [autoOpen]="false" [resizable]="true" [position]="'top, left'">
+    <div>Editor</div>
+    <div>            
+      <jqxEditor [theme]="'Shiny Black'" #myEditor 
+        [width]="'100%'" [height]="'99%'" [tools]="tools"  [createCommand]="createCommand">
+        &lt;b&gt;klimtEditor&lt;/b&gt; is a HTML text editor designed to simplify web content creation. You can use it as a replacement of your Textarea or you can create it from a DIV element.
+      </jqxEditor>     
+    </div>    
+</jqxWindow>
